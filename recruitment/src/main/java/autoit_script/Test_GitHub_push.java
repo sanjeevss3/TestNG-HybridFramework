@@ -12,6 +12,15 @@ public class Test_GitHub_push {
 
 	public static void main(String[] args) {
 		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
+		System.out.println("GitHub code push Test");
 
 	}
 
