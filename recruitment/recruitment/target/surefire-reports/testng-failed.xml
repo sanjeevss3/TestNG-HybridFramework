@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="methods">
+  <test name="FireFoxTestCases(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.testngscripts.CrossBrowserTesting">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- FireFoxTestCases(failed) -->
+  <test name="IETestCases(failed)" parallel="methods">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.testngscripts.CrossBrowserTesting">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- IETestCases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
