@@ -25,15 +25,22 @@ public class Beta_AJS_Open_Links {
 		String key = "./drivers/chromedriver.exe";
 		System.setProperty(value, key);
 
-		String baseUrl = "https://beta.aviationjobsearch.com/";
+		String baseUrl = "https://www.aviationjobsearch.com/";
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-	//	String underConsTitle = "Under Construction: Mercury Tours";
+		// String underConsTitle = "Under Construction: Mercury Tours";
+
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		driver.get(baseUrl);
-		
+
+		Thread.sleep(3000);
+		System.out.println("Pushing code to GitHub test.");
+		//driver.findElement(By.xpath(".//*[@id='top_line']/div/div[2]/div/span")).click();
+
+		driver.findElement(By.xpath(".//*[@id='cookie_policy']/div/div[3]/span")).click();
+
 		List<WebElement> linkElements = driver.findElements(By.tagName("a"));
 		String[] linkTexts = new String[linkElements.size()];
 		int i = 0;
@@ -47,17 +54,17 @@ public class Beta_AJS_Open_Links {
 		// test each link
 		for (String t : linkTexts) {
 			driver.findElement(By.linkText(t)).click();
-//			if (driver.getTitle().equals(underConsTitle)) {
-//				System.out.println("\"" + t + "\"" + " is under construction.");
-//			} else {
-//				System.out.println("\"" + t + "\"" + " is working.");
-//			}
-			
-			//driver.navigate().back();
-		//	((JavascriptExecutor) driver).executeScript("window.open()");
-//			ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
-//			driver.switchTo().window(tabs1.get(0));
-//			Thread.sleep(3000);
+			// if (driver.getTitle().equals(underConsTitle)) {
+			// System.out.println("\"" + t + "\"" + " is under construction.");
+			// } else {
+			// System.out.println("\"" + t + "\"" + " is working.");
+			// }
+
+			// driver.navigate().back();
+			((JavascriptExecutor) driver).executeScript("window.open()");
+			ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
+			driver.switchTo().window(tabs1.get(0));
+			Thread.sleep(3000);
 		}
 		driver.quit();
 	}
