@@ -1,20 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="98" started-at="2018-05-05T01:41:56Z" finished-at="2018-05-05T01:41:56Z">
+  <suite name="Default suite" duration-ms="48880" started-at="2018-05-09T18:16:53Z" finished-at="2018-05-09T18:17:42Z">
     <groups>
-      <group name="functionalTest">
-        <method signature="GroupTest2.homePage()[pri:0, instance:com.testngscripts.GroupTest2@5e5792a0]" name="homePage" class="com.testngscripts.GroupTest2"/>
-      </group> <!-- functionalTest -->
     </groups>
-    <test name="Test" duration-ms="98" started-at="2018-05-05T01:41:56Z" finished-at="2018-05-05T01:41:56Z">
-      <class name="com.testngscripts.GroupTest2">
-        <test-method status="PASS" signature="homePage()[pri:0, instance:com.testngscripts.GroupTest2@5e5792a0]" name="homePage" duration-ms="51" started-at="2018-05-05T07:11:56Z" finished-at="2018-05-05T07:11:56Z">
+    <test name="Default test" duration-ms="48880" started-at="2018-05-09T18:16:53Z" finished-at="2018-05-09T18:17:42Z">
+      <class name="page_factory.testcases.VerifyAJSLogin">
+        <test-method status="PASS" signature="beforeMethos(java.lang.reflect.Method)[pri:0, instance:page_factory.testcases.VerifyAJSLogin@35fc6dc4]" name="beforeMethos" is-config="true" duration-ms="25" started-at="2018-05-09T23:46:53Z" finished-at="2018-05-09T23:46:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void page_factory.testcases.VerifyAJSLogin.verifyLoginPage()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePage -->
-      </class> <!-- com.testngscripts.GroupTest2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- beforeMethos -->
+        <test-method status="FAIL" signature="verifyLoginPage()[pri:0, instance:page_factory.testcases.VerifyAJSLogin@35fc6dc4]" name="verifyLoginPage" duration-ms="48805" started-at="2018-05-09T23:46:53Z" finished-at="2018-05-09T23:47:42Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+l\Temp\anonymous4919456360058093505webdriver-profile\extensions\webdriver-staging
+1525889819428	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1525889819429	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1525889819430	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1525889819430	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1525889819431	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1525889819431	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1525889819433	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1525889819438	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1525889819438	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1525889819544	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1525889820641	addons.productaddons	INFO	Completed downloading document
+1525889821268	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889821270	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-dfff38
+1525889823014	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1525889823028	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1525889823402	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889823405	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-e630a1
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Sanjeev-India', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+l\Temp\anonymous4919456360058093505webdriver-profile\extensions\webdriver-staging
+1525889819428	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1525889819429	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1525889819430	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1525889819430	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1525889819431	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1525889819431	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1525889819433	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1525889819438	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1525889819438	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1525889819544	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1525889820641	addons.productaddons	INFO	Completed downloading document
+1525889821268	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889821270	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-dfff38
+1525889823014	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1525889823028	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1525889823402	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889823405	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-e630a1
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Sanjeev-India', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.hybridFramework.testBase.TestBase.getBrowser(TestBase.java:62)
+	at page_factory.testcases.VerifyAJSLogin.verifyLoginPage(VerifyAJSLogin.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+l\Temp\anonymous4919456360058093505webdriver-profile\extensions\webdriver-staging
+1525889819428	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1525889819429	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1525889819429	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1525889819430	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1525889819430	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1525889819430	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1525889819431	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1525889819431	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1525889819432	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1525889819433	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1525889819434	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1525889819435	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1525889819436	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1525889819437	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1525889819438	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1525889819438	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1525889819544	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1525889820641	addons.productaddons	INFO	Completed downloading document
+1525889821268	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889821270	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-dfff38
+1525889823014	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1525889823028	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1525889823402	addons.productaddons	INFO	downloadXHR File download. status=200
+1525889823405	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-e630a1
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPage -->
+        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:page_factory.testcases.VerifyAJSLogin@35fc6dc4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-09T23:47:42Z" finished-at="2018-05-09T23:47:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPage status=FAILURE method=VerifyAJSLogin.verifyLoginPage()[pri:0, instance:page_factory.testcases.VerifyAJSLogin@35fc6dc4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.hybridFramework.testBase.TestBase.getScreenShot(TestBase.java:113)
+	at com.hybridFramework.testBase.TestBase.getReport(TestBase.java:154)
+	at com.hybridFramework.testBase.TestBase.afterMethod(TestBase.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="endTest()[pri:0, instance:page_factory.testcases.VerifyAJSLogin@35fc6dc4]" name="endTest" is-config="true" duration-ms="0" started-at="2018-05-09T23:47:42Z" finished-at="2018-05-09T23:47:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

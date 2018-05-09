@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testngscripts.VerifyTitle">
+      <class name="page_factory.testcases.VerifyAJSLogin">
         <methods>
-          <include name="getTitle"/>
+          <include name="beforeMethos"/>
+          <include name="afterMethod"/>
+          <include name="verifyLoginPage"/>
         </methods>
-      </class> <!-- com.testngscripts.VerifyTitle -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
