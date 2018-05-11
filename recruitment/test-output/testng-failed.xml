@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="page_factory.testcases.VerifyAJSLogin">
+      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
         <methods>
-          <include name="beforeMethos"/>
-          <include name="afterMethod"/>
-          <include name="verifyLoginPage"/>
+          <include name="checkValidUser"/>
         </methods>
-      </class> <!-- page_factory.testcases.VerifyAJSLogin -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
