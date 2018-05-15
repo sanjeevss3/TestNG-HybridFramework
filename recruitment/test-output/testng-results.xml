@@ -2,123 +2,108 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64125" started-at="2018-05-12T17:47:18Z" finished-at="2018-05-12T17:48:22Z">
+  <suite name="Default suite" duration-ms="48595" started-at="2018-05-15T10:55:28Z" finished-at="2018-05-15T10:56:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64125" started-at="2018-05-12T17:47:18Z" finished-at="2018-05-12T17:48:22Z">
-      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
-        <test-method status="FAIL" signature="checkValidUser()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@61832929]" name="checkValidUser" duration-ms="64055" started-at="2018-05-12T23:17:18Z" finished-at="2018-05-12T23:18:22Z">
+    <test name="Default test" duration-ms="48595" started-at="2018-05-15T10:55:28Z" finished-at="2018-05-15T10:56:16Z">
+      <class name="page_factory.testcases.VerifyAJSLogin_POM">
+        <test-method status="PASS" signature="beforeMethos(java.lang.reflect.Method)[pri:0, instance:page_factory.testcases.VerifyAJSLogin_POM@35fc6dc4]" name="beforeMethos" is-config="true" duration-ms="20" started-at="2018-05-15T16:25:28Z" finished-at="2018-05-15T16:25:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void page_factory.testcases.VerifyAJSLogin_POM.verifyLoginPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethos -->
+        <test-method status="FAIL" signature="verifyLoginPage()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_POM@35fc6dc4]" name="verifyLoginPage" duration-ms="48499" started-at="2018-05-15T16:25:28Z" finished-at="2018-05-15T16:26:16Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
- app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1526147260174	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1526147260174	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1526147260174	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-[Child 13436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1526147261318	addons.productaddons	INFO	Completed downloading document
-1526147261906	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
-1526147261907	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
-1526147261908	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
-1526147261913	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
-1526147261917	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1526147261918	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
-1526147261919	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
-1526147262180	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262183	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262532	addons.manager	DEBUG	shutdown
-1526147262532	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1526147262533	addons.xpi	DEBUG	shutdown
-1526147262533	addons.xpi-utils	DEBUG	shutdown
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1526147262534	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
-1526147262535	DeferredSave.webext.sc.lz4	DEBUG	Flush called while data is dirty
-1526147262551	DeferredSave.webext.sc.lz4	DEBUG	Starting write
-1526147262555	addons.manager	DEBUG	Async provider shutdown done
-console.error: 
-  Message: Error: Connection closed before committing the transaction.
-  Stack:
-    executeTransaction/promise</transactionPromise<@resource://gre/modules/Sqlite.jsm:622:19
-observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 
-1526147262592	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-[GPU 1908] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+1526381733994	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1526381733994	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1526381733994	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1526381733996	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1526381733996	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1526381734002	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1526381734002	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526381735430	addons.productaddons	INFO	Completed downloading document
+1526381736484	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381736487	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-b7791d
+1526381737573	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1526381737605	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+[Parent 14844] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 1526381745918	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381745922	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-30f548
 
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'Sanjeev-India', ip: '192.168.2.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+System info: host: 'Sanjeev-India', ip: '172.16.22.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
- app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1526147260174	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1526147260174	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1526147260174	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-[Child 13436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1526147261318	addons.productaddons	INFO	Completed downloading document
-1526147261906	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
-1526147261907	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
-1526147261908	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
-1526147261913	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
-1526147261917	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1526147261918	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
-1526147261919	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
-1526147262180	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262183	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262532	addons.manager	DEBUG	shutdown
-1526147262532	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1526147262533	addons.xpi	DEBUG	shutdown
-1526147262533	addons.xpi-utils	DEBUG	shutdown
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1526147262534	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
-1526147262535	DeferredSave.webext.sc.lz4	DEBUG	Flush called while data is dirty
-1526147262551	DeferredSave.webext.sc.lz4	DEBUG	Starting write
-1526147262555	addons.manager	DEBUG	Async provider shutdown done
-console.error: 
-  Message: Error: Connection closed before committing the transaction.
-  Stack:
-    executeTransaction/promise</transactionPromise<@resource://gre/modules/Sqlite.jsm:622:19
-observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 
-1526147262592	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-[GPU 1908] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+1526381733994	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1526381733994	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1526381733994	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1526381733996	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1526381733996	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1526381734002	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1526381734002	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526381735430	addons.productaddons	INFO	Completed downloading document
+1526381736484	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381736487	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-b7791d
+1526381737573	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1526381737605	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+[Parent 14844] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 1526381745918	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381745922	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-30f548
 
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'Sanjeev-India', ip: '192.168.2.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+System info: host: 'Sanjeev-India', ip: '172.16.22.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
 	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
@@ -127,8 +112,8 @@ Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at page_factory.healper.BrowserFactory.startBrowser(BrowserFactory.java:27)
-	at page_factory.testcases.VerifyAJSLogin_PageFactory.checkValidUser(VerifyAJSLogin_PageFactory.java:22)
+	at com.hybridFramework.testBase.TestBase.getBrowser(TestBase.java:62)
+	at page_factory.testcases.VerifyAJSLogin_POM.verifyLoginPage(VerifyAJSLogin_POM.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -155,55 +140,42 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
- app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1526147260174	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1526147260174	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1526147260174	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-[Child 13436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1526147261318	addons.productaddons	INFO	Completed downloading document
-1526147261906	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
-1526147261907	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
-1526147261908	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
-1526147261913	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
-1526147261917	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1526147261918	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
-1526147261919	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
-1526147262180	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262183	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262532	addons.manager	DEBUG	shutdown
-1526147262532	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1526147262533	addons.xpi	DEBUG	shutdown
-1526147262533	addons.xpi-utils	DEBUG	shutdown
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1526147262534	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
-1526147262535	DeferredSave.webext.sc.lz4	DEBUG	Flush called while data is dirty
-1526147262551	DeferredSave.webext.sc.lz4	DEBUG	Starting write
-1526147262555	addons.manager	DEBUG	Async provider shutdown done
-console.error: 
-  Message: Error: Connection closed before committing the transaction.
-  Stack:
-    executeTransaction/promise</transactionPromise<@resource://gre/modules/Sqlite.jsm:622:19
-observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 
-1526147262592	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-[GPU 1908] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+1526381733994	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1526381733994	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1526381733994	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1526381733996	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1526381733996	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1526381734002	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1526381734002	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526381735430	addons.productaddons	INFO	Completed downloading document
+1526381736484	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381736487	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-b7791d
+1526381737573	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1526381737605	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+[Parent 14844] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 1526381745918	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381745922	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-30f548
 
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
 	... 33 more
@@ -212,8 +184,59 @@ observe@resource://gre/modules/AsyncShutdown.jsm:534:9
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkValidUser -->
-      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
+        </test-method> <!-- verifyLoginPage -->
+        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:page_factory.testcases.VerifyAJSLogin_POM@35fc6dc4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-15T16:26:16Z" finished-at="2018-05-15T16:26:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPage status=FAILURE method=VerifyAJSLogin_POM.verifyLoginPage()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_POM@35fc6dc4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.hybridFramework.testBase.TestBase.getScreenShot(TestBase.java:113)
+	at com.hybridFramework.testBase.TestBase.getReport(TestBase.java:154)
+	at com.hybridFramework.testBase.TestBase.afterMethod(TestBase.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="endTest()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_POM@35fc6dc4]" name="endTest" is-config="true" duration-ms="0" started-at="2018-05-15T16:26:16Z" finished-at="2018-05-15T16:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_POM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

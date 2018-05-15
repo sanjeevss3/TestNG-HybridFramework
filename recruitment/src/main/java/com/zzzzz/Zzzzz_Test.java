@@ -7,6 +7,8 @@ import java.io.IOException;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.lib.exceldataconfiguration.ExcelDataConfig;
 
@@ -19,18 +21,16 @@ import com.lib.exceldataconfiguration.ExcelDataConfig;
 
 public class Zzzzz_Test {
 	
-	public static void main(String[] args) throws IOException {
-//		ExcelDataConfig excel=new ExcelDataConfig("D:\\Workspace_Selenium\\readdatafromspreadsheet.xls");
-//		System.out.println(excel.getdata(1, 1, 1));
-		
-		File src=new File("D:\\\\Workspace_Selenium\\\\readdatafromspreadsheet.xls");
-		FileInputStream fis=new FileInputStream(src);
-		
-		HSSFWorkbook workbook=new HSSFWorkbook(fis);
-		HSSFSheet sheet=workbook.getSheet("lmpcredentials");
-		String data0=sheet.getRow(0).getCell(0).getStringCellValue();
-		System.out.println(data0);
-		workbook.close();
+	public static void main(String[] args) {
+		System.out.println("111111111");
+		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\drivers\\geckodriver.exe");
+		String key="webdriver.gecko.driver";
+		String value="./drivers/geckodriver.exe";
+		System.setProperty(key, value);
+		System.out.println("222222");
+		WebDriver driver=new FirefoxDriver();
+		System.out.println("3333333");
+		driver.get("http://www.google.com/");		
 	}
 
 }

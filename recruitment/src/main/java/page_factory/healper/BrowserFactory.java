@@ -24,6 +24,7 @@ public class BrowserFactory {
 			driver = new ChromeDriver();
 
 		} else if (browsername.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\drivers");
 			driver = new FirefoxDriver();
 
 		} else if (browsername.equalsIgnoreCase("IE")) {

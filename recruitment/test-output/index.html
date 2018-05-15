@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\QA Team\AppData\Local\Temp\testng-eclipse--718916541\testng-customsuite.xml</span>
+                    <span>C:\Users\QA Team\AppData\Local\Temp\testng-eclipse-222383071\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="page_factory.testcases.VerifyAJSLogin_PageFactory" hash-for-method="checkValidUser">checkValidUser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="page_factory.testcases.VerifyAJSLogin_POM" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,67 +120,54 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">page_factory.testcases.VerifyAJSLogin_PageFactory</span>
+              <span class="class-name">page_factory.testcases.VerifyAJSLogin_POM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkValidUser">
-                  </a> <!-- checkValidUser -->
-                  <span class="method-name">checkValidUser</span>
+                  <a name="verifyLoginPage">
+                  </a> <!-- verifyLoginPage -->
+                  <span class="method-name">verifyLoginPage</span>
                   <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
- app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1526147260174	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1526147260174	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1526147260174	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-[Child 13436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1526147261318	addons.productaddons	INFO	Completed downloading document
-1526147261906	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
-1526147261907	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
-1526147261908	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
-1526147261913	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
-1526147261917	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1526147261918	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
-1526147261919	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
-1526147262180	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262183	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262532	addons.manager	DEBUG	shutdown
-1526147262532	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1526147262533	addons.xpi	DEBUG	shutdown
-1526147262533	addons.xpi-utils	DEBUG	shutdown
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1526147262534	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
-1526147262535	DeferredSave.webext.sc.lz4	DEBUG	Flush called while data is dirty
-1526147262551	DeferredSave.webext.sc.lz4	DEBUG	Starting write
-1526147262555	addons.manager	DEBUG	Async provider shutdown done
-console.error: 
-  Message: Error: Connection closed before committing the transaction.
-  Stack:
-    executeTransaction/promise&lt;/transactionPromise&lt;@resource://gre/modules/Sqlite.jsm:622:19
-observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 
-1526147262592	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-[GPU 1908] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+1526381733994	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1526381733994	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1526381733994	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1526381733996	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1526381733996	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1526381734002	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1526381734002	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526381735430	addons.productaddons	INFO	Completed downloading document
+1526381736484	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381736487	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-b7791d
+1526381737573	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1526381737605	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+[Parent 14844] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 1526381745918	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381745922	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-30f548
 
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;Sanjeev-India&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;Sanjeev-India&apos;, ip: &apos;172.16.22.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
 	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
@@ -189,8 +176,8 @@ Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at page_factory.healper.BrowserFactory.startBrowser(BrowserFactory.java:27)
-	at page_factory.testcases.VerifyAJSLogin_PageFactory.checkValidUser(VerifyAJSLogin_PageFactory.java:22)
+	at com.hybridFramework.testBase.TestBase.getBrowser(TestBase.java:62)
+	at page_factory.testcases.VerifyAJSLogin_POM.verifyLoginPage(VerifyAJSLogin_POM.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -217,55 +204,42 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
- app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1526147260171	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1526147260172	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
-1526147260173	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1526147260174	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1526147260174	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1526147260174	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-[Child 13436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1526147261318	addons.productaddons	INFO	Completed downloading document
-1526147261906	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
-1526147261907	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
-1526147261908	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
-1526147261913	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
-1526147261917	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1526147261918	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
-1526147261919	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
-1526147261920	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1526147261922	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
-1526147262180	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262183	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-1526147262532	addons.manager	DEBUG	shutdown
-1526147262532	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1526147262533	addons.xpi	DEBUG	shutdown
-1526147262533	addons.xpi-utils	DEBUG	shutdown
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1526147262533	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1526147262534	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
-1526147262535	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
-1526147262535	DeferredSave.webext.sc.lz4	DEBUG	Flush called while data is dirty
-1526147262551	DeferredSave.webext.sc.lz4	DEBUG	Starting write
-1526147262555	addons.manager	DEBUG	Async provider shutdown done
-console.error: 
-  Message: Error: Connection closed before committing the transaction.
-  Stack:
-    executeTransaction/promise&lt;/transactionPromise&lt;@resource://gre/modules/Sqlite.jsm:622:19
-observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 
-1526147262592	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-[GPU 1908] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+1526381733994	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1526381733994	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1526381733994	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1526381733994	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1526381733995	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1526381733996	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1526381733996	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1526381733997	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1526381733998	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1526381733999	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1526381734000	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1526381734001	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1526381734002	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1526381734002	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18124] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526381735430	addons.productaddons	INFO	Completed downloading document
+1526381736484	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381736487	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-b7791d
+1526381737573	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1526381737605	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+[Parent 14844] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15912] WARNING: pipe error: 1526381745918	addons.productaddons	INFO	downloadXHR File download. status=200
+1526381745922	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\QATEAM~1\AppData\Local\Temp\tmpaddon-30f548
 
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
 	... 33 more
@@ -278,7 +252,7 @@ observe@resource://gre/modules/AsyncShutdown.jsm:534:9
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\QA Team\AppData\Local\Temp\testng-eclipse--718916541\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\QA Team\AppData\Local\Temp\testng-eclipse-222383071\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -287,7 +261,7 @@ observe@resource://gre/modules/AsyncShutdown.jsm:534:9
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;page_factory.testcases.VerifyAJSLogin_PageFactory&quot;/&gt;
+      &lt;class name=&quot;page_factory.testcases.VerifyAJSLogin_POM&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -329,14 +303,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkValidUser')
-data.setCell(0, 2, 'page_factory.testcases.VerifyAJSLogin_PageFactory')
-data.setCell(0, 3, 64055);
+data.setCell(0, 1, 'verifyLoginPage')
+data.setCell(0, 2, 'page_factory.testcases.VerifyAJSLogin_POM')
+data.setCell(0, 3, 48499);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -362,13 +336,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">page_factory.testcases.VerifyAJSLogin_PageFactory</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">page_factory.testcases.VerifyAJSLogin_POM</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethos(public void page_factory.testcases.VerifyAJSLogin_POM.verifyLoginPage())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">checkValidUser</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">verifyLoginPage</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterMethod([TestResult name=verifyLoginPage status=FAILURE method=VerifyAJSLogin_POM.verifyLoginPage()[pri:0, i...)</span>
+                <span class="method-start">48536 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

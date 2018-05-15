@@ -6,23 +6,23 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Launch_All_Beta_Sites {
 
 	public static void main(String agrs[]) throws InterruptedException {
 
 		// Firefox browser property details
-		// System.setProperty("webdriver.gecko.driver",
-		// "D:\\Selenium_Drivers\\geckodriver.exe");
-		// WebDriver driver = new FirefoxDriver();
+		 System.setProperty("webdriver.gecko.driver", "C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
 
 		// Chrome browser property details
 		// System.setProperty("webdriver.chrome.driver","D:\\Selenium_Drivers\\chromedriver.exe");
-		String key="webdriver.chrome.driver";
-		String value="./drivers/chromedriver.exe";
-		System.setProperty(key, value);
+//		String key="webdriver.chrome.driver";
+//		String value="./drivers/chromedriver.exe";0
+//		System.setProperty(key, value);
 		
-		WebDriver driver = new ChromeDriver();
+//		WebDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 		driver.get("http://beta.simplymarketingjobs.co.uk/");
