@@ -30,7 +30,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
 public class TestBase {
 
 	public WebDriver driver;
@@ -56,20 +55,18 @@ public class TestBase {
 		if (System.getProperty("os.name").contains("Window"))
 			;
 		if (browser.equalsIgnoreCase("firefox")) {
-			String key = "WebDriver.driver.firefox";
-			String value = "./driver/geckodriver.exe";
+			String key = "webdriver.gecko.driver";
+			String value = "./drivers/geckodriver.exe";
 			System.setProperty(key, value);
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("chrome")) {
-			String key = "WebDriver.driver.chrome";
-			String value = "./driver/chromedriver.exe";
-			System.setProperty(key, value);
+			String value = "webdriver.chrome.driver";
+			String key = "./drivers/chromedriver.exe";
+			System.setProperty(value, key);
 			driver = new ChromeDriver();
-		}
-
-		else if (browser.equalsIgnoreCase("ie")) {
-			String key = "WebDriver.driver.chrome";
-			String value = "./driver/chromedriver.exe";
+		} else if (browser.equalsIgnoreCase("ie")) {
+			String key = "webdriver.ie.driver";
+			String value = "./drivers/IEDriverServer.exe";
 			System.setProperty(key, value);
 			driver = new InternetExplorerDriver();
 		}

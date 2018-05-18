@@ -3,13 +3,15 @@ package page_factory.testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+
+import com.hybridFramework.testBase.TestBase;
+
 import page_factory.healper.BrowserFactory;
 import page_factory.javapages.Login_Page_PageFactory;
 
 /**
  *
- * @author Sanjeev Chaudhary 
- * https://github.com/sanjeevss3/
+ * @author Sanjeev Chaudhary https://github.com/sanjeevss3/
  *
  */
 
@@ -19,7 +21,10 @@ public class VerifyAJSLogin_PageFactory {
 	public void checkValidUser() {
 
 		// This will launch browser and specific URL
-		WebDriver driver = BrowserFactory.startBrowser("firefox", "https://beta.aviationjobsearch.com/");
+		WebDriver driver = BrowserFactory.startBrowser("ie", "https://beta.aviationjobsearch.com/");
+
+		// WebDriver driver = TestBase.getBrowser("ie");
+		// driver.get( "https://beta.aviationjobsearch.com/");
 
 		// Created page object using page factory
 		Login_Page_PageFactory loginpage = PageFactory.initElements(driver, Login_Page_PageFactory.class);
