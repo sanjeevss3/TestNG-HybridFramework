@@ -1,100 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96" started-at="2018-05-18T11:28:55Z" finished-at="2018-05-18T11:28:55Z">
+  <suite name="Failed suite [SmokeTestScenaios]" duration-ms="54" started-at="2018-05-18T12:14:33Z" finished-at="2018-05-18T12:14:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96" started-at="2018-05-18T11:28:55Z" finished-at="2018-05-18T11:28:55Z">
-      <class name="com.testngscripts.SoftandHardAssert">
-        <test-method status="FAIL" signature="hartAssert()[pri:0, instance:com.testngscripts.SoftandHardAssert@68c4039c]" name="hartAssert" duration-ms="29" started-at="2018-05-18T16:58:55Z" finished-at="2018-05-18T16:58:55Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [13] but found [12]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [13] but found [12]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at org.testng.Assert.assertEquals(Assert.java:399)
-	at com.testngscripts.SoftandHardAssert.hartAssert(SoftandHardAssert.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test name="Sprint1(failed)" duration-ms="54" started-at="2018-05-18T12:14:33Z" finished-at="2018-05-18T12:14:33Z">
+      <class name="com.retestfailedtestcases.TestCase3">
+        <test-method status="PASS" signature="testTJS()[pri:0, instance:com.retestfailedtestcases.TestCase3@6f7fd0e6]" name="testTJS" duration-ms="20" started-at="2018-05-18T17:44:33Z" finished-at="2018-05-18T17:44:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hartAssert -->
-        <test-method status="FAIL" signature="softAssert()[pri:0, instance:com.testngscripts.SoftandHardAssert@68c4039c]" name="softAssert" duration-ms="13" started-at="2018-05-18T16:58:55Z" finished-at="2018-05-18T16:58:55Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-	expected [13] but found [12]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	expected [13] but found [12]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.testngscripts.SoftandHardAssert.softAssert(SoftandHardAssert.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- softAssert -->
-      </class> <!-- com.testngscripts.SoftandHardAssert -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testTJS -->
+      </class> <!-- com.retestfailedtestcases.TestCase3 -->
+    </test> <!-- Sprint1(failed) -->
+  </suite> <!-- Failed suite [SmokeTestScenaios] -->
 </testng-results>
