@@ -29,4 +29,12 @@ public class SoftandHardAssert {
 		System.out.println("HardAssert Test completed");
 	}
 
+	@Test
+	public void softAssert1() {
+		SoftAssert assertion = new SoftAssert();
+		System.out.println("SoftAssert Test started1111111111");
+		assertion.assertEquals(12, 12);
+		System.out.println("SoftAssert Test completed1111111111");
+		assertion.assertAll();
+	}
 }

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [SmokeTestScenaios]]">
-  <test name="Sprint1(failed)(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.retestfailedtestcases.TestCase3">
+      <class name="com.testngscripts.SoftandHardAssert">
         <methods>
-          <include name="testTJS"/>
+          <include name="hartAssert"/>
+          <include name="softAssert"/>
         </methods>
-      </class> <!-- com.retestfailedtestcases.TestCase3 -->
+      </class> <!-- com.testngscripts.SoftandHardAssert -->
     </classes>
-  </test> <!-- Sprint1(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [SmokeTestScenaios]] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

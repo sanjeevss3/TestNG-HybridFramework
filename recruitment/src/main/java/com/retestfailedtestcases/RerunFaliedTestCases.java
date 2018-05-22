@@ -12,13 +12,14 @@ import org.testng.TestNG;
  */
 
 public class RerunFaliedTestCases {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.out.println("222222222222222");
 		TestNG runner = new TestNG();
 		List<String> list = new ArrayList<String>();
 		list.add(
 				"C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\test-output\\SmokeTestScenaios\\testng-failed.xml");
 		runner.setTestSuites(list);
+		Thread.sleep(5000);
 		runner.run();
 	}
 
