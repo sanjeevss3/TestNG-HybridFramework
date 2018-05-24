@@ -41,7 +41,7 @@ public class Beta_AJS_Open_Links {
 		driver.get(baseUrl);
 
 		Thread.sleep(3000);
-		System.out.println("Pushing code to GitHub test.");
+		//System.out.println("Pushing code to GitHub test.");
 		driver.findElement(By.xpath(".//*[@id='top_line']/div/div[2]/div/span")).click();
 
 		driver.findElement(By.xpath(".//*[@id='cookie_policy']/div/div[3]/span")).click();
