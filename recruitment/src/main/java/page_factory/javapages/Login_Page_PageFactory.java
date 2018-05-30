@@ -1,15 +1,22 @@
 package page_factory.javapages;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Window;
+
 /**
  *
- * @author Sanjeev Chaudhary 
- * https://github.com/sanjeevss3/
+ * @author Sanjeev Chaudhary https://github.com/sanjeevss3/
  *
  */
 
@@ -35,6 +42,12 @@ public class Login_Page_PageFactory {
 	@FindBy(how = How.NAME, using = "signin_button")
 	@CacheLookup
 	WebElement loginbutton;
+
+	@FindBy(linkText = "Sanjeev")
+	WebElement profilename;
+
+	@FindBy(className = "profile_pic")
+	WebElement profile_pic;
 
 	@FindBy(how = How.LINK_TEXT, using = "Forgot password?")
 	@CacheLookup

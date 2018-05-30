@@ -21,7 +21,7 @@ public class VerifyAJSLogin_PageFactory {
 	public void checkValidUser() {
 
 		// This will launch browser and specific URL
-		WebDriver driver = BrowserFactory.startBrowser("ie", "https://beta.aviationjobsearch.com/");
+		WebDriver driver = BrowserFactory.startBrowser("chrome", "http://beta.simplysalesjobs.co.uk/");
 
 		// WebDriver driver = TestBase.getBrowser("ie");
 		// driver.get( "https://beta.aviationjobsearch.com/");

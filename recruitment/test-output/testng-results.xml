@@ -2,48 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
+  <suite name="Default suite" duration-ms="15540" started-at="2018-05-30T09:37:38Z" finished-at="2018-05-30T09:37:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-      <class name="com.testngscripts.TestNGannotationSequence">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
+    <test name="Default test" duration-ms="15540" started-at="2018-05-30T09:37:38Z" finished-at="2018-05-30T09:37:53Z">
+      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
+        <test-method status="PASS" signature="checkValidUser()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@12f41634]" name="checkValidUser" duration-ms="15478" started-at="2018-05-30T09:37:38Z" finished-at="2018-05-30T09:37:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="first()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="first" duration-ms="7" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- first -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testngscripts.TestNGannotationSequence@eafc191]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-05-21T07:14:23Z" finished-at="2018-05-21T07:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.testngscripts.TestNGannotationSequence -->
+        </test-method> <!-- checkValidUser -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
