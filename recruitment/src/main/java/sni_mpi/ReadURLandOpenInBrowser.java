@@ -45,17 +45,17 @@ public class ReadURLandOpenInBrowser {
 			driver.get(data1);
 			System.out.println(data1);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.open()");
+			js.executeScript("window.open(/)");
 	
-			DynamicArray d=new DynamicArray();       
-			 for(int i=0;i<100;i++){
-		            d.add(i+10);       
-		            }
+		//	DynamicArray d=new DynamicArray();       
+//			 for(int i=0;i<100;i++){
+//		            d.add(i+10);       
+//		            }
 			
-	ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-			driver.switchTo().window(tabs.get(1));
-	     driver.get(data1);	
-			tabs=tab+1;
+//	ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+//			driver.switchTo().window(tabs.get(1));
+//	     driver.get(data1);	
+	//		tabs=tab+1;
 
 	
 //			driver.quit();

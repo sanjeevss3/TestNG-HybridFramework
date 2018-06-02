@@ -26,88 +26,88 @@ public class Test {
 		driver.manage().window().maximize();
 		
 		File scr = new File("D:\\Workspace_Selenium\\TestData.xls");
-		FileInputStream fis = new FileInputStream(scr);
-
-		HSSFWorkbook xlswb = new HSSFWorkbook(fis);
-
-		HSSFSheet sheet1 = xlswb.getSheet("sheetname2");
+//		FileInputStream fis = new FileInputStream(scr);
+//
+//		HSSFWorkbook xlswb = new HSSFWorkbook(fis);
+//
+//		HSSFSheet sheet1 = xlswb.getSheet("sheetname2");
 
 			driver.getCurrentUrl();
 
 			{
 
-			FileInputStream fi = new FileInputStream(“D:\\data.xls”);
-
-			Workbook w = Workbook.getWorkbook(fi);
-
-			s = w.getSheet();
-				driver.get();
-
-			driver.get(“sheet1”);
-
-			 
-
-			for(int row=1; row <=s.getRows();row++)
-
-			{
-
-			String Urllist = s.getCell(0, row).getContents();
-
-			System.out.println(“Urllist”+ Urllist);
-			java.util.List<WebElement> linkElements = driver.findElements(By.tagName(“a”));
-
-			 
-
-			String[] linkTexts = new String[linkElements.size()];
-
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-			 
-
-			int j = 0;
-
-			for (WebElement e : linkElements)
-
-			{
-
-			linkTexts[j] = e.getText();
-
-			j++;
-
-			}
+//			FileInputStream fi = new FileInputStream(“D:\\data.xls”);
+//
+//			Workbook w = Workbook.getWorkbook(fi);
+//
+//			s = w.getSheet();
+//				driver.get();
+//
+//			driver.get(“sheet1”);
+//
+//			 
+//
+//			for(int row=1; row <=s.getRows();row++)
+//
+//			{
+//
+//			String Urllist = s.getCell(0, row).getContents();
+//
+//			System.out.println(“Urllist”+ Urllist);
+//			java.util.List<WebElement> linkElements = driver.findElements(By.tagName(“a”));
+//
+//			 
+//
+//			String[] linkTexts = new String[linkElements.size()];
+//
+//			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//
+//			 
+//
+//			int j = 0;
+//
+//			for (WebElement e : linkElements)
+//
+//			{
+//
+//			linkTexts[j] = e.getText();
+//
+//			j++;
+//
+//			}
 
 			 
 
 			//test each link
-
-			for (String t : linkTexts)
-
-			{
-
-			if (t != null && !t.isEmpty())
-
-			{
-
-			driver.findElement(By.linkText(t)).click();
-
-			String title;
-
-			title=driver.getTitle();
-
-			if(title.contains(“404”))
-
-			{
-
-			out.println(t+” the link is not working”);
-			}
-
-			else{
-
-			out.println(“\”” + t + “\””
-			+ ” is working.”);
-
-			}
+//
+//			for (String t : linkTexts)
+//
+//			{
+//
+//			if (t != null && !t.isEmpty())
+//
+//			{
+//
+//			driver.findElement(By.linkText(t)).click();
+//
+//			String title;
+//
+//			title=driver.getTitle();
+//
+//			if(title.contains(“404”))
+//
+//			{
+//
+//			out.println(t+” the link is not working”);
+//			}
+//
+//			else{
+//
+//			out.println(“\”” + t + “\””
+//			+ ” is working.”);
+//
+//			}
 	}
-
+	}
 }
 			
