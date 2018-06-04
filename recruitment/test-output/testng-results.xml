@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53829" started-at="2018-06-03T09:05:54Z" finished-at="2018-06-03T09:06:48Z">
+  <suite name="Default suite" duration-ms="26932" started-at="2018-06-04T11:47:50Z" finished-at="2018-06-04T11:48:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53829" started-at="2018-06-03T09:05:54Z" finished-at="2018-06-03T09:06:48Z">
+    <test name="Default test" duration-ms="26932" started-at="2018-06-04T11:47:50Z" finished-at="2018-06-04T11:48:17Z">
       <class name="webtablehandling.DynamicWebTableHandle">
-        <test-method status="PASS" signature="datePickerDynamically()[pri:0, instance:webtablehandling.DynamicWebTableHandle@262b2c86]" name="datePickerDynamically" duration-ms="53792" started-at="2018-06-03T09:05:54Z" finished-at="2018-06-03T09:06:48Z">
+        <test-method status="PASS" signature="datePickerDynamically()[pri:0, instance:webtablehandling.DynamicWebTableHandle@262b2c86]" name="datePickerDynamically" duration-ms="26886" started-at="2018-06-04T11:47:50Z" finished-at="2018-06-04T11:48:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datePickerDynamically -->

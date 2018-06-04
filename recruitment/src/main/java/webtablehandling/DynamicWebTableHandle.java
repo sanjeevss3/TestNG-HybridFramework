@@ -44,16 +44,21 @@ public class DynamicWebTableHandle {
 		//*[@id='vContactsForm']/table/tbody/tr[8]/td[2]
 		//*[@id='vContactsForm']/table/tbody/tr[n]/td[2]
 		
-		String before_xpath="//*[@id='vContactsForm']/table/tbody/tr[";
-		String after_xpath="]/td[2]";
-		
+	/*	//Method-#1..
+	   String before_xpath="//*[@id='vContactsForm']/table/tbody/tr[";
+	   String after_xpath="]/td[2]";
+				
 		for(int i=4; i<=9;i++) {
 			String name=driver.findElement(By.xpath(before_xpath+i+after_xpath)).getText();
 			System.out.println(name);
-			if(name.contains("12387678")) {
+			if(name.contains("Rahul Dravid")) {
 				driver.findElement(By.xpath(".//*[@id='vContactsForm']/table/tbody/tr[6]/td[1]/input")).click();
 			}
 			
-		}
+		} */
+		
+		//Method-#2
+		driver.findElement(By.xpath("//a[contains(text(),'Rahul Dravid')]/parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'sonali sarolkar')]/parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
 	}
 }

@@ -13,16 +13,15 @@ public class Launch_All_Beta_Sites {
 	public static void main(String agrs[]) throws InterruptedException {
 
 		// Firefox browser property details
-		 System.setProperty("webdriver.gecko.driver", "C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\drivers\\geckodriver.exe");
-		 WebDriver driver = new FirefoxDriver();
+//		 System.setProperty("webdriver.gecko.driver", "C:\\Users\\QA Team\\git\\Recruitment\\recruitment\\drivers\\geckodriver.exe");
+//		 WebDriver driver = new FirefoxDriver();
 
 		// Chrome browser property details
 		// System.setProperty("webdriver.chrome.driver","D:\\Selenium_Drivers\\chromedriver.exe");
-//		String key="webdriver.chrome.driver";
-//		String value="./drivers/chromedriver.exe";0
-//		System.setProperty(key, value);
-		
-//		WebDriver driver = new ChromeDriver();
+		String key="webdriver.chrome.driver";
+		String value="./drivers/chromedriver.exe";
+		System.setProperty(key, value);
+		WebDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 		driver.get("http://beta.simplymarketingjobs.co.uk/");
@@ -32,16 +31,17 @@ public class Launch_All_Beta_Sites {
 		driver.switchTo().window(tabs1.get(1));
 		driver.get("http://beta.simplysalesjobs.co.uk/");
 		
-		//Scroll down window to 700 position.
-//		Thread.sleep(3000);
-//		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,700)");
+	/*  Scroll down window to 700 position.
+		Thread.sleep(3000);
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,700)");
 		
-		//driver.findElement(By.xpath("html/body/footer/div[1]/div[2]/ul/li[3]/a")).click();
-		//driver.findElement(By.linkText("Associations")).click();
+		driver.findElement(By.xpath("html/body/footer/div[1]/div[2]/ul/li[3]/a")).click();
+		driver.findElement(By.linkText("Associations")).click();
+		
 		//Scroll down to a particular element of a page. 
-	/*	WebElement element=driver.findElement(By.xpath("html/body/footer/div[1]/div[2]/ul/li[3]/a"));
-//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView()", element);
-		((JavascriptExecutor)driver).executeAsyncScript("arguments[0].scrollIntoView()", element);
+		WebElement element=driver.findElement(By.xpath("html/body/footer/div[1]/div[2]/ul/li[3]/a"));
+    	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView()", element);
+		((JavascriptExecutor)driver).executeAsyncScript("arguments[0].scrollIntoView()", element); */
 
 		((JavascriptExecutor) driver).executeScript("window.open()");
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
@@ -133,6 +133,6 @@ public class Launch_All_Beta_Sites {
 		driver.switchTo().window(tabs19.get(19));
 		driver.get("http://beta.jobsinbrighton.co.uk/");
 
-		System.out.println("All BETA sites are opened in Browser");  */
+		System.out.println("All BETA sites are opened in Browser");  
 	}
 }
