@@ -29,7 +29,7 @@ public class ReadSitesURL {
 		System.out.println("Total no. of rows: " + (rowcount + 1));
 
 		for (int i = 0; i <= rowcount; i++) {
-			String data0 = sheet1.getRow(0).getCell(0).getStringCellValue();
+			String data0 = sheet1.getRow(i).getCell(0).getStringCellValue();
 			System.out.println("Data from row: " + i + " is " + data0);
 		}
 
