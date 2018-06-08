@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import bsh.commands.dir;
-import page_factory.healper.BrowserFactory;
+import page_factory.browser.BrowserFactory;
 
 /**
 *

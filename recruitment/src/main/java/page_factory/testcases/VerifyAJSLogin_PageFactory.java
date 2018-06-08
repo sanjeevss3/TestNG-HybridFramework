@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.hybridFramework.testBase.TestBase;
 
-import page_factory.healper.BrowserFactory;
+import page_factory.browser.BrowserFactory;
 import page_factory.javapages.Login_Page_PageFactory;
 
 /**
@@ -21,7 +21,7 @@ public class VerifyAJSLogin_PageFactory {
 	public void checkValidUser() {
 
 		// This will launch browser and specific URL
-		WebDriver driver = BrowserFactory.startBrowser("chrome", "http://beta.simplysalesjobs.co.uk/");
+		WebDriver driver = BrowserFactory.startBrowser("safari", "http://beta.simplysalesjobs.co.uk/");
 
 		// WebDriver driver = TestBase.getBrowser("ie");
 		// driver.get( "https://beta.aviationjobsearch.com/");

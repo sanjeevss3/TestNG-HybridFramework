@@ -1,9 +1,10 @@
-package page_factory.healper;
+package page_factory.browser;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 /**
  *
@@ -33,6 +34,8 @@ public class BrowserFactory {
 			String value = "./drivers/IEDriverServer.exe";
 			System.setProperty(key, value);
 			driver = new InternetExplorerDriver();
+		} else if(browsername.equalsIgnoreCase("safari")) {
+			driver=new SafariDriver(); // SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 		}
 
 		driver.manage().window().maximize();

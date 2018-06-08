@@ -1,21 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4609" started-at="2018-06-06T16:29:20Z" finished-at="2018-06-06T16:29:25Z">
+  <suite name="Default suite" duration-ms="128" started-at="2018-06-07T07:20:06Z" finished-at="2018-06-07T07:20:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4609" started-at="2018-06-06T16:29:20Z" finished-at="2018-06-06T16:29:25Z">
-      <class name="apitesting.GetData2">
-        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:apitesting.GetData2@eafc191]" name="testResponseCode" duration-ms="3737" started-at="2018-06-06T16:29:20Z" finished-at="2018-06-06T16:29:24Z">
+    <test name="Default test" duration-ms="128" started-at="2018-06-07T07:20:06Z" finished-at="2018-06-07T07:20:06Z">
+      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
+        <test-method status="FAIL" signature="checkValidUser()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@1060b431]" name="checkValidUser" duration-ms="65" started-at="2018-06-07T07:20:06Z" finished-at="2018-06-07T07:20:06Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SANJEEV-INDIA', ip: '172.16.22.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: SafariDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SANJEEV-INDIA', ip: '172.16.22.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: SafariDriver
+at org.openqa.selenium.safari.SafariDriver.getExecutor(SafariDriver.java:66)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:60)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:40)
+at page_factory.browser.BrowserFactory.startBrowser(BrowserFactory.java:38)
+at page_factory.testcases.VerifyAJSLogin_PageFactory.checkValidUser(VerifyAJSLogin_PageFactory.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testResponseCode -->
-        <test-method status="PASS" signature="testBody()[pri:1, instance:apitesting.GetData2@eafc191]" name="testBody" duration-ms="835" started-at="2018-06-06T16:29:24Z" finished-at="2018-06-06T16:29:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBody -->
-      </class> <!-- apitesting.GetData2 -->
+        </test-method> <!-- checkValidUser -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

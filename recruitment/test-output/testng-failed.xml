@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webtablehandling.DynamicWebTableHandle">
+      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
         <methods>
-          <include name="datePickerDynamically"/>
+          <include name="checkValidUser"/>
         </methods>
-      </class> <!-- webtablehandling.DynamicWebTableHandle -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
