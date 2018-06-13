@@ -18,7 +18,7 @@ public class ConnectMySQL {
 
 	@Test
 	public void testDB() throws ClassNotFoundException, SQLException {
-		Class.forName("com.mysql.cj.jdbc.Driver"); //This is optional
+		Class.forName("com.mysql.jdbc.Driver"); //This is optional
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/selenium", "root", null);
 		Statement smt = conn.createStatement();
 		ResultSet rs = smt.executeQuery("select * from employee");
