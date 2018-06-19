@@ -53,6 +53,7 @@ public class PopUpWindowHandle {
 				elementwait=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
 				driver.findElement(By.className("btn btn-default redBtn")).click();
 
+				System.out.println("@@@@@@@@@@@@@@@@@@@@@@@");
 			}
 		}
 	}
