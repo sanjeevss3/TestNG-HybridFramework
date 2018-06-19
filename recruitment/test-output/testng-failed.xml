@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
+      <class name="popup.window.handles.PopUpWindowHandle">
         <methods>
-          <include name="checkValidUser"/>
+          <include name="pupup"/>
         </methods>
-      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
+      </class> <!-- popup.window.handles.PopUpWindowHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

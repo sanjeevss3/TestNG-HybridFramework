@@ -24,8 +24,9 @@ public class ConnectMySQL {
 		ResultSet rs = smt.executeQuery("select * from employee");
 
 		while (rs.next()) {
-			String salary = rs.getString("salary");
-			System.out.println("Database Records are: " + salary);
+			String name=rs.getString("name");
+			int salary = rs.getInt("salary");
+			System.out.println("Database Records are: " +name +" "+ salary);
 		}
 	}
 

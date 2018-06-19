@@ -8,6 +8,7 @@ import java.io.IOException;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -29,21 +30,21 @@ public class Open_URL_In_IE_FF {
 		 String key="webdriver.gecko.driver";
 		 String value="./drivers/geckodriver.exe";
 		 System.setProperty(key, value);
-		 WebDriver driver=new FirefoxDriver(); */
+		 WebDriver driver=new FirefoxDriver(); 
 		
 		// IE browser property details:-
 		String key = "webdriver.ie.driver";
 		String value = "./drivers/IEDriverServer.exe";
 		System.setProperty(key, value);
-		WebDriver driver = new InternetExplorerDriver();
+		WebDriver driver = new InternetExplorerDriver(); */
 		
 		// Chrome browser property details:-
-		/*
+		
 		System.setProperty("webdriver.chrome.driver","D:\\Selenium_Drivers\\chromedriver.exe");
 		String value = "webdriver.chrome.driver";
 		String key = "./drivers/chromedriver.exe";
-		System.setProperty(value, key); */
-		
+		System.setProperty(value, key); 
+		WebDriver driver=new ChromeDriver(); 
 		driver.manage().window().maximize();
 		driver.get("http://beta.simplylawjobs.com");
 		System.out.println(driver.getTitle());
