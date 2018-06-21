@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="popup.window.handles.PopUpWindowHandle">
+      <class name="com.restapitesting.GetAPITest">
         <methods>
-          <include name="pupup"/>
+          <include name="setUp"/>
+          <include name="getAPITest1"/>
         </methods>
-      </class> <!-- popup.window.handles.PopUpWindowHandle -->
+      </class> <!-- com.restapitesting.GetAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

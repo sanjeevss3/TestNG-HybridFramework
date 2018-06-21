@@ -2,47 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33145" started-at="2018-06-19T12:04:21Z" finished-at="2018-06-19T12:04:55Z">
+  <suite name="Default suite" duration-ms="1349" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33145" started-at="2018-06-19T12:04:21Z" finished-at="2018-06-19T12:04:55Z">
-      <class name="popup.window.handles.PopUpWindowHandle">
-        <test-method status="FAIL" signature="pupup()[pri:0, instance:popup.window.handles.PopUpWindowHandle@32eebfca]" name="pupup" duration-ms="33028" started-at="2018-06-19T12:04:22Z" finished-at="2018-06-19T12:04:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: .btn\ btn\-default\ redBtn
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SANJEEV-INDIA', ip: '172.16.22.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\QA Team\AppData\Local\Temp\rust_mozprofile.3k1Psd0XaiUq, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0, platformVersion=10.0, moz:processID=15516.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: 0631e6d0-bff1-45ae-86af-a47667d6103e
-*** Element info: {Using=class name, value=btn btn-default redBtn}]]>
-            </message>
+    <test name="Default test" duration-ms="1349" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
+      <class name="com.restapitesting.GetAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.restapitesting.GetAPITest@4fb64261]" name="setUp" is-config="true" duration-ms="13" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="getAPITest1()[pri:0, instance:com.restapitesting.GetAPITest@4fb64261]" name="getAPITest1" duration-ms="1265" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .btn\ btn\-default\ redBtn
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SANJEEV-INDIA', ip: '172.16.22.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\QA Team\AppData\Local\Temp\rust_mozprofile.3k1Psd0XaiUq, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0, platformVersion=10.0, moz:processID=15516.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: 0631e6d0-bff1-45ae-86af-a47667d6103e
-*** Element info: {Using=class name, value=btn btn-default redBtn}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-at popup.window.handles.PopUpWindowHandle.pupup(PopUpWindowHandle.java:49)
+              <![CDATA[java.lang.NullPointerException
+at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:92)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at restapitesting.RestClient.get(RestClient.java:31)
+at com.restapitesting.GetAPITest.getAPITest1(GetAPITest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,11 +47,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pupup -->
-      </class> <!-- popup.window.handles.PopUpWindowHandle -->
+        </test-method> <!-- getAPITest1 -->
+      </class> <!-- com.restapitesting.GetAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
