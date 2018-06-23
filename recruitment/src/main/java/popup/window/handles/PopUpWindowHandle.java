@@ -32,7 +32,8 @@ public class PopUpWindowHandle {
 		driver.findElement(By.id("loginsubmit")).click();
 
 		/*
-		 * String popuppage=driver.getWindowHandle(); System.out.println(popuppage);
+		 * String popuppage=driver.getWindowHandle(); 
+		 * System.out.println(popuppage);
 		 */
 
 		Set<String> window = driver.getWindowHandles();
@@ -45,7 +46,7 @@ public class PopUpWindowHandle {
 			currentwindowid = iterator.next().toString();
 			System.out.println(currentwindowid);
 
-			if (currentwindowid.equals(homepage)) {
+			if (!currentwindowid.equals(homepage)) {
 				driver.switchTo().window(currentwindowid);
 				Thread.sleep(5000);
 				WebDriverWait wait=new WebDriverWait(driver, 10);

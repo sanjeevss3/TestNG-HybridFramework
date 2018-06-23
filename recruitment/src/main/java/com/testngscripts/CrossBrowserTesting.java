@@ -18,7 +18,7 @@ public class CrossBrowserTesting {
 
 	WebDriver driver;
 
-	@Test
+	@Test(threadPoolSize = 3, invocationCount = 3,  timeOut = 10000)
 	@Parameters("browser")
 	public void verifyPageTitle(String browsername) {
 
@@ -30,10 +30,10 @@ public class CrossBrowserTesting {
 		}
 
 		else if (browsername.equalsIgnoreCase("firefox")) {
-			//String key = "webdriver.gecko.driver";
-			//String value = "./drivers/geckodriver.exe";
-			//System.setProperty(key, value);
-			System.setProperty("webdriver.gecko.driver","D:\\Selenium_Drivers\\geckodriver.exe");
+			String key = "webdriver.gecko.driver";
+			String value = "./drivers/geckodriver.exe";
+			System.setProperty(key, value);
+			//System.setProperty("webdriver.gecko.driver","D:\\Selenium_Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 

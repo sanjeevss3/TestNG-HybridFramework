@@ -109,8 +109,10 @@ public class TestBase {
 
 		File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String imagelocation = System.getProperty("\\src\\main\\java\\com\\hybridFramework\\screenshot\\");
+		
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formator = new SimpleDateFormat("dd_mm_yy_hh_mm_ss");
+		
 		String actualimagename = imagelocation + imageName + "_" + formator.format(calendar.getTime()) + ".png";
 		File destFile = new File(actualimagename);
 		FileUtils.copyFile(image, destFile);

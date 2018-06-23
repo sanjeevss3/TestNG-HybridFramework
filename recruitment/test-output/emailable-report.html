@@ -8,42 +8,24 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,349</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">ChromeTestCases</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">121,892</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FireFoxTestCases</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">42,716</td><td></td><td></td></tr>
+<tr><td><a href="#t2">IETestCases</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">7,433</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num">172,041</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.restapitesting.GetAPITest</td><td><a href="#m0">getAPITest1</a></td><td rowspan="1">1529584758937</td><td rowspan="1">1265</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTestCases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testngscripts.CrossBrowserTesting</td><td><a href="#m0">verifyPageTitle</a></td><td rowspan="3">1529691496999</td><td rowspan="3">38637</td></tr><tr class="passedeven"><td><a href="#m1">verifyPageTitle</a></td></tr><tr class="passedeven"><td><a href="#m2">verifyPageTitle</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FireFoxTestCases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testngscripts.CrossBrowserTesting</td><td><a href="#m3">verifyPageTitle</a></td><td rowspan="3">1529691576170</td><td rowspan="3">12570</td></tr><tr class="passedeven"><td><a href="#m4">verifyPageTitle</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyPageTitle</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">IETestCases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testngscripts.CrossBrowserTesting</td><td><a href="#m6">verifyPageTitle</a></td><td rowspan="3">1529691618897</td><td rowspan="3">2227</td></tr><tr class="passedeven"><td><a href="#m7">verifyPageTitle</a></td></tr><tr class="passedeven"><td><a href="#m8">verifyPageTitle</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.restapitesting.GetAPITest#getAPITest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:92)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at restapitesting.RestClient.get(RestClient.java:31)
-	at com.restapitesting.GetAPITest.getAPITest1(GetAPITest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTestCases</h2><h3 id="m0">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FireFoxTestCases</h2><h3 id="m3">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>IETestCases</h2><h3 id="m6">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>IE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>IE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.testngscripts.CrossBrowserTesting#verifyPageTitle</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>IE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

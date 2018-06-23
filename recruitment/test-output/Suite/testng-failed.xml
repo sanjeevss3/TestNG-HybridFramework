@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="betassj(failed)" parallel="tests">
-    <parameter name="sites" value="ssj"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="FireFoxTestCases(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.testngscripts.OpenRecruitmentSites">
+      <class name="com.testngscripts.CrossBrowserTesting">
         <methods>
-          <include name="openSites" invocation-numbers="0"/>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testngscripts.OpenRecruitmentSites -->
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
     </classes>
-  </test> <!-- betassj(failed) -->
-  <test name="betaslj(failed)" parallel="tests">
-    <parameter name="sites" value="slj"/>
-    <classes>
-      <class name="com.testngscripts.OpenRecruitmentSites">
-        <methods>
-          <include name="openSites" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.testngscripts.OpenRecruitmentSites -->
-    </classes>
-  </test> <!-- betaslj(failed) -->
+  </test> <!-- FireFoxTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

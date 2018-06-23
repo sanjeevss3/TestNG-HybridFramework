@@ -25,9 +25,9 @@ public class BrowserFactory {
 
 		} else if (browsername.equalsIgnoreCase("firefox")) {
 			String key="webdriver.gecko.driver";
-			 String value="./drivers/geckodriver.exe";
-			 System.setProperty(key, value);
-			 driver=new FirefoxDriver();
+			String value="./drivers/geckodriver.exe";
+			System.setProperty(key, value);
+			driver=new FirefoxDriver();
 
 		} else if (browsername.equalsIgnoreCase("IE")) {
 			String key = "webdriver.ie.driver";

@@ -1,57 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1349" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
+  <suite name="Suite" duration-ms="172092" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:20:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1349" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
-      <class name="com.restapitesting.GetAPITest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.restapitesting.GetAPITest@4fb64261]" name="setUp" is-config="true" duration-ms="13" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:18Z">
+    <test name="ChromeTestCases" duration-ms="121892" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:19:36Z">
+      <class name="com.testngscripts.CrossBrowserTesting">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="42705" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:18:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="getAPITest1()[pri:0, instance:com.restapitesting.GetAPITest@4fb64261]" name="getAPITest1" duration-ms="1265" started-at="2018-06-21T12:39:18Z" finished-at="2018-06-21T12:39:20Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:92)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at restapitesting.RestClient.get(RestClient.java:31)
-at com.restapitesting.GetAPITest.getAPITest1(GetAPITest.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="38637" started-at="2018-06-22T18:18:16Z" finished-at="2018-06-22T18:18:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAPITest1 -->
-      </class> <!-- com.restapitesting.GetAPITest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="40476" started-at="2018-06-22T18:18:55Z" finished-at="2018-06-22T18:19:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
+    </test> <!-- ChromeTestCases -->
+    <test name="FireFoxTestCases" duration-ms="42716" started-at="2018-06-22T18:19:36Z" finished-at="2018-06-22T18:20:18Z">
+      <class name="com.testngscripts.CrossBrowserTesting">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="12570" started-at="2018-06-22T18:19:36Z" finished-at="2018-06-22T18:19:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="12512" started-at="2018-06-22T18:19:48Z" finished-at="2018-06-22T18:20:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="17613" started-at="2018-06-22T18:20:01Z" finished-at="2018-06-22T18:20:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
+    </test> <!-- FireFoxTestCases -->
+    <test name="IETestCases" duration-ms="7433" started-at="2018-06-22T18:20:18Z" finished-at="2018-06-22T18:20:26Z">
+      <class name="com.testngscripts.CrossBrowserTesting">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2227" started-at="2018-06-22T18:20:18Z" finished-at="2018-06-22T18:20:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2428" started-at="2018-06-22T18:20:21Z" finished-at="2018-06-22T18:20:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2761" started-at="2018-06-22T18:20:23Z" finished-at="2018-06-22T18:20:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+      </class> <!-- com.testngscripts.CrossBrowserTesting -->
+    </test> <!-- IETestCases -->
+  </suite> <!-- Suite -->
 </testng-results>
