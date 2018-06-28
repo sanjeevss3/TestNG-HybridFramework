@@ -1,120 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="172092" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:20:26Z">
+  <suite name="Default suite" duration-ms="17220" started-at="2018-06-28T11:08:19Z" finished-at="2018-06-28T11:08:36Z">
     <groups>
     </groups>
-    <test name="ChromeTestCases" duration-ms="121892" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:19:36Z">
-      <class name="com.testngscripts.CrossBrowserTesting">
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="42705" started-at="2018-06-22T18:17:34Z" finished-at="2018-06-22T18:18:16Z">
+    <test name="Default test" duration-ms="17220" started-at="2018-06-28T11:08:19Z" finished-at="2018-06-28T11:08:36Z">
+      <class name="page_factory.testcases.VerifyAJSLogin_PageFactory">
+        <test-method status="FAIL" signature="checkValidUser()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@3891771e]" name="checkValidUser" duration-ms="16640" started-at="2018-06-28T11:08:19Z" finished-at="2018-06-28T11:08:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"login_click123"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SANJEEV-INDIA', ip: '172.16.22.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Users\QATEAM~1\AppData\Local\Temp\scoped_dir22584_14251}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2477f41fce916ff27fc9ff7d60c7a80e
+*** Element info: {Using=id, value=login_click123}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"login_click123"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SANJEEV-INDIA', ip: '172.16.22.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Users\QATEAM~1\AppData\Local\Temp\scoped_dir22584_14251}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2477f41fce916ff27fc9ff7d60c7a80e
+*** Element info: {Using=id, value=login_click123}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy7.click(Unknown Source)
+at page_factory.javapages.Login_Page_PageFactory.login_AJS_Pagefactory(Login_Page_PageFactory.java:57)
+at page_factory.testcases.VerifyAJSLogin_PageFactory.checkValidUser(VerifyAJSLogin_PageFactory.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidUser -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@3891771e]" name="teardown" is-config="true" duration-ms="528" started-at="2018-06-28T11:08:35Z" finished-at="2018-06-28T11:08:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[[TestResult name=checkValidUser status=FAILURE method=VerifyAJSLogin_PageFactory.checkValidUser()[pri:0, instance:page_factory.testcases.VerifyAJSLogin_PageFactory@3891771e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="38637" started-at="2018-06-22T18:18:16Z" finished-at="2018-06-22T18:18:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@3891771e]" name="verifyPageTitle" duration-ms="40476" started-at="2018-06-22T18:18:55Z" finished-at="2018-06-22T18:19:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-      </class> <!-- com.testngscripts.CrossBrowserTesting -->
-    </test> <!-- ChromeTestCases -->
-    <test name="FireFoxTestCases" duration-ms="42716" started-at="2018-06-22T18:19:36Z" finished-at="2018-06-22T18:20:18Z">
-      <class name="com.testngscripts.CrossBrowserTesting">
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="12570" started-at="2018-06-22T18:19:36Z" finished-at="2018-06-22T18:19:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="12512" started-at="2018-06-22T18:19:48Z" finished-at="2018-06-22T18:20:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@4cf4d528]" name="verifyPageTitle" duration-ms="17613" started-at="2018-06-22T18:20:01Z" finished-at="2018-06-22T18:20:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-      </class> <!-- com.testngscripts.CrossBrowserTesting -->
-    </test> <!-- FireFoxTestCases -->
-    <test name="IETestCases" duration-ms="7433" started-at="2018-06-22T18:20:18Z" finished-at="2018-06-22T18:20:26Z">
-      <class name="com.testngscripts.CrossBrowserTesting">
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2227" started-at="2018-06-22T18:20:18Z" finished-at="2018-06-22T18:20:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2428" started-at="2018-06-22T18:20:21Z" finished-at="2018-06-22T18:20:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.String)[pri:0, instance:com.testngscripts.CrossBrowserTesting@df27fae]" name="verifyPageTitle" duration-ms="2761" started-at="2018-06-22T18:20:23Z" finished-at="2018-06-22T18:20:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-      </class> <!-- com.testngscripts.CrossBrowserTesting -->
-    </test> <!-- IETestCases -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- teardown -->
+      </class> <!-- page_factory.testcases.VerifyAJSLogin_PageFactory -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ReadSitesURL {
+public class ReadExcelDataAdv {
 
 	public static void main(String[] args) throws Exception {
 

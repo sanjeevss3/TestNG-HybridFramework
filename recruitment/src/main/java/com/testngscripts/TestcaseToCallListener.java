@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  * https://github.com/sanjeevss3/
  *
  */
-//@Listeners(com.testngscripts.TestNGListener.class)
+@Listeners(com.testngscripts.TestNGListener.class)
 public class TestcaseToCallListener {
 
 	WebDriver driver;
@@ -31,6 +31,12 @@ public class TestcaseToCallListener {
 
 	@Test
 	public void titleMatch() {
+		System.out.println("In method we are checking Failed condition");
+		Assert.assertEquals("Aviation", "Aviation");
+	}
+	
+	@Test(dependsOnMethods="titleMatch")
+	public void titleMatch1() {
 		System.out.println("In method we are checking Failed condition");
 		Assert.assertEquals("Aviation", "Sanjeev");
 	}

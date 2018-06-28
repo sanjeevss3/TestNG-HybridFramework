@@ -45,8 +45,7 @@ public class Friday_Ad {
 
 	@DataProvider(name = "fridayad")
 	public Object[][] passdata() {
-		ExcelDataConfig config = new ExcelDataConfig(
-				"D:\\Workspace_Selenium\\recruitment\\exceltestdata\\inputcredentails.xls");
+		ExcelDataConfig config = new ExcelDataConfig("./exceltestdata/inputcredentails.xls");
 
 		// ExcelDataConfig config = new
 		// ExcelDataConfig("/.exceltestdata/inputcredentails.xls");

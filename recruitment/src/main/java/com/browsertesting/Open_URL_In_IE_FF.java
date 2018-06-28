@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.hybridFramework.testBase.TestBase;
 import com.lib.exceldataconfiguration.ExcelDataConfig;
 
 /**
@@ -46,7 +47,7 @@ public class Open_URL_In_IE_FF {
 		System.setProperty(value, key); 
 		WebDriver driver=new ChromeDriver(); 
 		driver.manage().window().maximize();
-		driver.get("http://beta.simplylawjobs.com");
+		driver.get("http://www.simplylawjobs.com");
 		System.out.println(driver.getTitle());
 	}
 

@@ -10,33 +10,34 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.hybridFramework.testBase.TestBase;
+
+import page_factory.browser.BrowserFactory;
+
 public class MultipleLoginCredentials {
 	WebDriver driver;
 
-	@Test(dataProvider = "fridayad")
+	@Test(dataProvider = "aviationjobsearch")
 	public void logintofridayad(String username, String password) throws Exception {
 
 		String value = "webdriver.chrome.driver";
 		String key = "./drivers/chromedriver.exe";
 		System.setProperty(value, key);
-
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize(); 
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-		driver.get("https://www.friday-ad.co.uk/login/");
-		driver.findElement(By.id("username")).sendKeys(username);
-		driver.findElement(By.id("user_login_password")).sendKeys(password);
-		Thread.sleep(3000);
-		driver.findElement(By.xpath(".//*[@id='login-header-id']")).click();
-
-		driver.findElement(By.linkText("")).click();
-		// driver.findElement(By.className("primary-btn-1 button expand")).click();
-
-		Thread.sleep(3000);
+		driver.get("https://www.aviationjobsearch.com/");
+		driver.findElement(By.id("login_click")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("signin_email")).sendKeys(username);
+		driver.findElement(By.id("signin_password")).sendKeys(password);
+		driver.findElement(By.name("signin_button")).click();
 
 		System.out.println(driver.getTitle());
-		Assert.assertTrue(driver.getTitle().contains("Dashboard"), "User is not able to login - Invalid Credentails");
+		Thread.sleep(5000);
+		Assert.assertTrue(driver.getTitle().contains("Aviation"), "User is not able to login - Invalid Credentails");
 		System.out.println("Page title verified - User able to login successfully");
 	}
 
@@ -45,15 +46,16 @@ public class MultipleLoginCredentials {
 		driver.quit();
 	}
 
-	@DataProvider(name = "fridayad")
+	@DataProvider(name = "aviationjobsearch")
 	public Object[][] passdata() {
 		Object[][] credentails = new Object[2][2];
 
-		credentails[0][0] = "siva.pelleti@fridaymediagroup.com";
-		credentails[0][1] = "Password@1";
-
-		credentails[1][0] = "sanjeev.chaudhary@fridaymediagroup.com";
-		credentails[1][1] = "test123";
+		credentails[0][0] = "sanjeev.chaudhary@fridaymediagroup.com";
+		credentails[0][1] = "test123";
+		
+		credentails[1][0] = "siva.pelleti@fridaymediagroup.com";
+		credentails[1][1] = "Password@1";
+		
 		return credentails;
 
 	}

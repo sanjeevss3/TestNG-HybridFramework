@@ -27,8 +27,8 @@ public class VerifyAJSLogin_POM extends TestBase{
 //		driver.manage().window().maximize();
 
 		TestBase objbrowser=new TestBase();
-		objbrowser.getBrowser("firefox");
-		driver.get("https://beta.aviationjobsearch.com/");
+		objbrowser.startBrowser("firefox","https://beta.aviationjobsearch.com/");
+		//driver.get("https://beta.aviationjobsearch.com/");
 		Login_Page_POM objlogin = new Login_Page_POM(driver);
 
 		/* Normal ways to call method

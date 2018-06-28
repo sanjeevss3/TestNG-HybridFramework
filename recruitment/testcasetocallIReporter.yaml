@@ -1,0 +1,9 @@
+name: CustomeIReporterSuite
+configFailurePolicy: skip
+listeners:
+  - com.testngscripts.TestNGIReporterListener
+tests:
+  - name: CustomeIReporter
+    classes:
+      - com.testngscripts.TestcaseToCallListener
+

@@ -11,14 +11,17 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.eclipse.jetty.util.log.JavaUtilLog;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -51,31 +54,89 @@ public class TestBase {
 	}
 
 	// Open Browsers configuration
-	public void getBrowser(String browser) {
-		if (System.getProperty("os.name").contains("Window"))
-			;
-		if (browser.equalsIgnoreCase("firefox")) {
-			String key = "webdriver.gecko.driver";
-			String value = "./drivers/geckodriver.exe";
-			System.setProperty(key, value);
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("chrome")) {
+	public WebDriver startBrowser(String browsername, String url) {
+		if (browsername.equalsIgnoreCase("chrome")) {
 			String value = "webdriver.chrome.driver";
 			String key = "./drivers/chromedriver.exe";
 			System.setProperty(value, key);
 			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("ie")) {
+
+		} else if (browsername.equalsIgnoreCase("firefox")) {
+			String key = "webdriver.gecko.driver";
+			String value = "./drivers/geckodriver.exe";
+			System.setProperty(key, value);
+			driver = new FirefoxDriver();
+
+		} else if (browsername.equalsIgnoreCase("IE")) {
 			String key = "webdriver.ie.driver";
 			String value = "./drivers/IEDriverServer.exe";
 			System.setProperty(key, value);
 			driver = new InternetExplorerDriver();
+		} else if (browsername.equalsIgnoreCase("safari")) {
+			driver = new SafariDriver(); // SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 		}
 
-		else {
-			System.out.println("Browser does not find");
+		driver.manage().window().maximize();
+		driver.get(url);
+		return driver;
+	}
+
+	/*
+	 * public void getBrowser(String browser, String url) { if
+	 * (System.getProperty("os.name").contains("Window")) ;
+	 * 
+	 * if (browser.equalsIgnoreCase("firefox")) { String key =
+	 * "webdriver.gecko.driver"; String value = "./drivers/geckodriver.exe";
+	 * System.setProperty(key, value); driver = new FirefoxDriver(); } else if
+	 * (browser.equalsIgnoreCase("chrome")) { String value =
+	 * "webdriver.chrome.driver"; String key = "./drivers/chromedriver.exe";
+	 * System.setProperty(value, key); driver = new ChromeDriver(); } else if
+	 * (browser.equalsIgnoreCase("ie")) { String key = "webdriver.ie.driver"; String
+	 * value = "./drivers/IEDriverServer.exe"; System.setProperty(key, value);
+	 * driver = new InternetExplorerDriver(); }else
+	 * if(browser.equalsIgnoreCase("safari")) { driver=new SafariDriver(); //
+	 * SafariDriver requires Safari 10 running on OSX El Capitan or greater. }
+	 * 
+	 * else { System.out.println("Browser does not find"); }
+	 * driver.manage().window().maximize(); driver.get(url);
+	 * 
+	 * }
+	 */
+
+	// Take screenshot and store at a location.
+	public void getscreenshot(WebDriver driver, String screenshot) {
+		try {
+			TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
+			File scrImage = takeScreenshot.getScreenshotAs(OutputType.FILE);
+			File destImage = new File("./screenshots/"+screenshot+".png");
+			FileUtils.copyFile(scrImage, destImage);
+			System.out.println("Screenshot Taken---------->>>>>>>>>>>>");
+		} catch (Exception e) {
+			System.out.println("Exception while taking screenshot --->>>"+e.getMessage());
 		}
 
 	}
+
+	/*
+	 * public String getScreenShot1(String imageName) throws IOException {
+	 * 
+	 * if (imageName.equals("")) { imageName = "blank"; }
+	 * 
+	 * try { File image = ((TakesScreenshot)
+	 * driver).getScreenshotAs(OutputType.FILE); String imagelocation =
+	 * System.getProperty("\\src\\main\\java\\com\\hybridFramework\\screenshot");
+	 * 
+	 * Calendar calendar = Calendar.getInstance(); SimpleDateFormat formator = new
+	 * SimpleDateFormat("dd_mm_yy_hh_mm_ss");
+	 * 
+	 * String actualimagename = imagelocation + imageName + "_" +
+	 * formator.format(calendar.getTime()) + ".png"; File destFile = new
+	 * File(actualimagename); FileUtils.copyFile(image, destFile); return
+	 * actualimagename; } catch (Exception e) { System.out.println(e.getMessage());
+	 * } return imageName;
+	 * 
+	 * }
+	 */
 
 	// Load data from properties file
 	public void loadPropertiesFile() throws IOException {
@@ -97,26 +158,6 @@ public class TestBase {
 	}
 
 	public void getPropertiesData() {
-
-	}
-
-	// Take screenshot and store at a location.
-	public String getScreenShot(String imageName) throws IOException {
-
-		if (imageName.equals("")) {
-			imageName = "blank";
-		}
-
-		File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String imagelocation = System.getProperty("\\src\\main\\java\\com\\hybridFramework\\screenshot\\");
-		
-		Calendar calendar = Calendar.getInstance();
-		SimpleDateFormat formator = new SimpleDateFormat("dd_mm_yy_hh_mm_ss");
-		
-		String actualimagename = imagelocation + imageName + "_" + formator.format(calendar.getTime()) + ".png";
-		File destFile = new File(actualimagename);
-		FileUtils.copyFile(image, destFile);
-		return actualimagename;
 
 	}
 
@@ -150,8 +191,8 @@ public class TestBase {
 					result.getName() + "Test is skipped and skipped reason is: " + result.getThrowable());
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, result.getName() + "Test is failed: " + result.getThrowable());
-			String screen = getScreenShot("");
-			test.log(LogStatus.FAIL, test.addScreenCapture(screen));
+			// String screen = getScreenShot("");
+			// test.log(LogStatus.FAIL, test.addScreenCapture(screen));
 		} else if (result.getStatus() == ITestResult.STARTED) {
 			test.log(LogStatus.INFO, result.getName() + "Test is started");
 		}
