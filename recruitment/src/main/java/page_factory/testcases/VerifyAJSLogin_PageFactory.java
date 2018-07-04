@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.gargoylesoftware.htmlunit.javascript.host.file.File;
 import com.hybridFramework.testBase.TestBase;
+import com.relevantcodes.extentreports.ExtentReports;
 
 import page_factory.browser.BrowserFactory;
 import page_factory.javapages.Login_Page_PageFactory;
@@ -30,7 +31,7 @@ public class VerifyAJSLogin_PageFactory {
 
 		// This will launch browser and specific URL
 		//WebDriver driver = BrowserFactory.startBrowser("chrome", "http://www.simplysalesjobs.co.uk/");
-
+		
 		TestBase browser = new TestBase();
 		TestBase screenshot =new TestBase();
 		 screenshot.getscreenshot(driver,"browserstarted");

@@ -15,10 +15,13 @@ public class OpenSites {
 
 	WebDriver driver;
 	@Test
-	public void openURL() {
+	public void openURL() throws InterruptedException {
 
 			TestBase test=new TestBase();
-		//	test.getBrowser("chrome", "https://www.aviationjobsearch.com/");
+			test.startBrowser("chrome", "https://www.aviationjobsearch.com/");
+			Thread.sleep(5000);
+			driver.navigate().refresh();
+			System.out.println("Page refresh finished");
 
 	
 	}
