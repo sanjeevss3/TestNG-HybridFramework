@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="zzzzz.OpenSites">
+      <class name="com.retestfailedtestcases.TestCase1">
         <methods>
-          <include name="openURL"/>
+          <include name="testTJS"/>
+          <include name="testAJS"/>
         </methods>
-      </class> <!-- zzzzz.OpenSites -->
+      </class> <!-- com.retestfailedtestcases.TestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

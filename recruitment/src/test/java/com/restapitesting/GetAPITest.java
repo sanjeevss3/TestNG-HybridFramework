@@ -24,7 +24,7 @@ public class GetAPITest extends TestBase {
 	public void setUp() throws IOException {
 		testBase = new TestBase();
 		serviceURL = prop.getProperty("URL");
-		apiURL = prop.getProperty(serviceURL);
+		apiURL = prop.getProperty("serviceURL");
 		url = serviceURL + apiURL;
 	}
 

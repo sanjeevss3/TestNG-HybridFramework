@@ -27,7 +27,8 @@ public class RestClient {
 	// 1. GET Method:
 	public void get(String url) throws ClientProtocolException, IOException {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
-		HttpGet httpget = new HttpGet();
+		HttpGet httpget = new HttpGet(url);
+		System.out.println(url);
 		CloseableHttpResponse httpresopnse = httpclient.execute(httpget); // Hit the GET URL
 
 		// A. Status code
