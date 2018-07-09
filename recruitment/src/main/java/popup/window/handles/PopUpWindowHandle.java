@@ -41,7 +41,7 @@ public class PopUpWindowHandle {
 
 		Iterator iterator = window.iterator();
 
-		String currentwindowid;
+		String currentwindowid;	
 		while (iterator.hasNext()) {
 			currentwindowid = iterator.next().toString();
 			System.out.println(currentwindowid);
