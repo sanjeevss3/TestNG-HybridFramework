@@ -41,7 +41,6 @@ public class Launch_All_Live_Sites {
 		((JavascriptExecutor) driver).executeScript("window.open()");
 		ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs1.get(1));
-		
 		driver.get("http://www.simplysalesjobs.co.uk/");
 		//driver.findElement(By.linkText("Newest Jobs")).click();
 

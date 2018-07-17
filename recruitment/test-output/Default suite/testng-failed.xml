@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.retestfailedtestcases.TestCase1">
+      <class name="popup.window.handles.PopUpWindowHandle">
         <methods>
-          <include name="testTJS"/>
-          <include name="testAJS"/>
+          <include name="pupup"/>
         </methods>
-      </class> <!-- com.retestfailedtestcases.TestCase1 -->
+      </class> <!-- popup.window.handles.PopUpWindowHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

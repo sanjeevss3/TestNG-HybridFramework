@@ -2,8 +2,10 @@ package page_factory.testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -48,7 +50,9 @@ public class VerifyAJSLogin_PageFactory {
 		loginpage.login_AJS_Pagefactory("sanjeev.chaudhary@fridaymediagroup.com", "test123");
 		Thread.sleep(5000);
 		//screenshot.getscreenshot(driver,"user loggedIn");
-		driver.close();
+//		  WebElement UploadImg = driver.findElement(By.xpath("//*[@id='file_upload_button']"));
+//		  UploadImg.sendKeys("d:\5.jpg");
+	//	driver.close();
 
 	}
 	

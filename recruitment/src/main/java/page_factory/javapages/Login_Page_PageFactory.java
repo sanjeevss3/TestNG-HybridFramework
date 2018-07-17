@@ -23,8 +23,8 @@ import com.gargoylesoftware.htmlunit.javascript.host.Window;
 public class Login_Page_PageFactory {
 	WebDriver driver;
 
-	public Login_Page_PageFactory(WebDriver driver1) {
-		this.driver = driver1;
+	public Login_Page_PageFactory(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	@FindBy(id = "login_click123")

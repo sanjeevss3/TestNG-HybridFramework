@@ -11,7 +11,7 @@ import org.testng.TestNG;
  *
  */
 
-public class RerunFaliedTestCases {
+public class ReturnFaliedTestCases {
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("222222222222222");
 		TestNG runner = new TestNG();
