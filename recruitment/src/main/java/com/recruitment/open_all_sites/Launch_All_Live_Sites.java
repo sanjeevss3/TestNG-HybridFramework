@@ -48,12 +48,13 @@ public class Launch_All_Live_Sites {
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(2)); 
 		driver.get("http://www.simplylawjobs.com/");
-	//	driver.findElement(By.linkText("Newest Jobs")).click();
+		driver.findElement(By.linkText("Newest Jobs")).click();
 
 		((JavascriptExecutor) driver).executeScript("window.open()");
 		ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs3.get(3));
-		driver.get("http://www.google.com/");
+		driver.get("http://www.google.com");
+		//driver.get("http://www.inautomotive.com");
 		//driver.findElement(By.linkText("Newest Jobs")).click();
 
 		((JavascriptExecutor) driver).executeScript("window.open()");
