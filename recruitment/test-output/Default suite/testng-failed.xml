@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="popup.window.handles.PopUpWindowHandle">
+      <class name="highlightelement.HighlightElement">
         <methods>
-          <include name="pupup"/>
+          <include name="highlighterElement"/>
         </methods>
-      </class> <!-- popup.window.handles.PopUpWindowHandle -->
+      </class> <!-- highlightelement.HighlightElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

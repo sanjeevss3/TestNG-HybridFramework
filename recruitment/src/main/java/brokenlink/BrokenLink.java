@@ -34,6 +34,7 @@ public class BrokenLink {
 			WebElement ele = links.get(i);
 
 			String url = ele.getAttribute("href");
+			System.out.println(url);
 
 			verifyLinkActive(url);
 
@@ -45,17 +46,17 @@ public class BrokenLink {
 		try {
 			URL url = new URL(linkUrl);
 
-			HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+			HttpURLConnection httpConnect = (HttpURLConnection) url.openConnection();
 
-			httpURLConnect.setConnectTimeout(3000);
+			httpConnect.setConnectTimeout(3000);
 
-			httpURLConnect.connect();
+			httpConnect.connect();
 
-			if (httpURLConnect.getResponseCode() == 200) {
-				System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+			if (httpConnect.getResponseCode() == 200) {
+				System.out.println(linkUrl + " - " + httpConnect.getResponseMessage());
 			}
-			if (httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND) {
-				System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
+			if (httpConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND) {
+				System.out.println(linkUrl + " - " + httpConnect.getResponseMessage() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
 			}
 		} catch (Exception e) {
 

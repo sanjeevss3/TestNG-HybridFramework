@@ -27,7 +27,7 @@ public class Login_Page_PageFactory {
 		this.driver = driver;
 	}
 
-	@FindBy(id = "login_click123")
+	@FindBy(id = "login_click")
 	@CacheLookup
 	WebElement clickonloginmenu;
 
@@ -58,6 +58,7 @@ public class Login_Page_PageFactory {
 		username.sendKeys(un);
 		password.sendKeys(pass);
 		loginbutton.click();
+		profilename.click();
 	}
 
 }

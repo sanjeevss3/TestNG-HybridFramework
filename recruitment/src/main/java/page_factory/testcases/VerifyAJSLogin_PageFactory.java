@@ -36,8 +36,8 @@ public class VerifyAJSLogin_PageFactory {
 		
 		TestBase browser = new TestBase();
 		TestBase screenshot =new TestBase();
-		 screenshot.getscreenshot(driver,"browserstarted");
-		 driver = browser.startBrowser("chrome", "https://beta.aviationjobsearch.com/");
+		screenshot.getscreenshot(driver,"browserstarted");
+		driver = browser.startBrowser("chrome", "https://beta.aviationjobsearch.com/");
 		 //screenshot.getscreenshot(driver,"aviationhomepage");
 		
 		// WebDriver driver = TestBase.getBrowser("ie");
@@ -50,19 +50,18 @@ public class VerifyAJSLogin_PageFactory {
 		loginpage.login_AJS_Pagefactory("sanjeev.chaudhary@fridaymediagroup.com", "test123");
 		Thread.sleep(5000);
 		//screenshot.getscreenshot(driver,"user loggedIn");
-//		  WebElement UploadImg = driver.findElement(By.xpath("//*[@id='file_upload_button']"));
-//		  UploadImg.sendKeys("d:\5.jpg");
-	//	driver.close();
+		driver.findElement(By.xpath("//*[@id='file_upload_button']")).sendKeys("d:\\logos.jpg");
+		//driver.close();
 
 	}
 	
-	@AfterMethod
-	public void teardown(ITestResult result) {
-		if(ITestResult.FAILURE==result.getStatus()) {
-			TestBase screenshot =new TestBase();
-			screenshot.getscreenshot(driver, result.getName());
-		}
-		
-	}
+//	@AfterMethod
+//	public void teardown(ITestResult result) {
+//		if(ITestResult.FAILURE==result.getStatus()) {
+//			TestBase screenshot =new TestBase();
+//			screenshot.getscreenshot(driver, result.getName());
+//		}
+//		
+//	}
 
 }
