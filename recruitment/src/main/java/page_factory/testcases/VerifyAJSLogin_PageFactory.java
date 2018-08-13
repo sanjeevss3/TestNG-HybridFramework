@@ -48,6 +48,8 @@ public class VerifyAJSLogin_PageFactory {
 		
 		// Call Method
 		loginpage.login_AJS_Pagefactory("sanjeev.chaudhary@fridaymediagroup.com", "test123");
+		
+		
 		Thread.sleep(5000);
 		//screenshot.getscreenshot(driver,"user loggedIn");
 		driver.findElement(By.xpath("//*[@id='file_upload_button']")).sendKeys("d:\\logos.jpg");
