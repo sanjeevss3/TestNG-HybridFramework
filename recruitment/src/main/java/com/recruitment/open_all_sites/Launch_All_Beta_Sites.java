@@ -8,6 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+/**
+*
+* @author Sanjeev Chaudhary 
+*
+*/
 public class Launch_All_Beta_Sites {
 
 	public static void main(String agrs[]) throws InterruptedException {

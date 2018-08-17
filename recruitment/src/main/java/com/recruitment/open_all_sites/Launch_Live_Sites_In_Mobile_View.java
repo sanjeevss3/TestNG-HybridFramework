@@ -5,6 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+/**
+*
+* @author Sanjeev Chaudhary 
+*
+*/
 public class Launch_Live_Sites_In_Mobile_View {
 
 	public static void main(String agrs[]) throws InterruptedException {

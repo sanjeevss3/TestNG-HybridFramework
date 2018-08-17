@@ -16,6 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
+/**
+*
+* @author Sanjeev Chaudhary 
+*
+*/
 public class Launch_All_Live_Sites {
 
 	public static void main(String agrs[]) throws InterruptedException {

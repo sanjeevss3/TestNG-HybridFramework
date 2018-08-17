@@ -7,6 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+/**
+*
+* @author Sanjeev Chaudhary 
+*
+*/
 public class Captch {
 
 	public static void main(String[] args) throws InterruptedException {
