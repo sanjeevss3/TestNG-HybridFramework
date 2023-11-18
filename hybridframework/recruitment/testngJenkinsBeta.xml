@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="com.testngscripts.Launch_All_Beta_Sites_Jenkins" />
+			<class name="com.testngscripts.VerifyTitle" />
+			<class name="com.testngscripts.VerifyErrorMessage" />
+			<class name="com.recruitment.simplymarketingjobs.Open_Menu" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
