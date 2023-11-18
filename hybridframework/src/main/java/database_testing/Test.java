@@ -1,4 +1,4 @@
-package datbase_testing;
+package database_testing;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
